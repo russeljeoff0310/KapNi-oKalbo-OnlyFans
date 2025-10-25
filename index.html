@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>KapNiñoKalbo.OnlyFans</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+ <div class="container">
+   <h2>Kap. Niño's personalities</h2>
+   <p>tap to view</p>
+  <div class="One">
+   <span>Wholesome</span>
+   <video loop id="one"  src="/Kap nino/kap.video/greetings.mp4">
+   </video>
+   </div>
+  <div class="Two">
+   <span>Englishera</span>
+   <video loop id="two"  src="/Kap nino/kap.video/inglishero.mp4">
+   </video>
+  </div>
+  <div class="Three">
+   <span>Singer</span>
+   <video loop id="three" src="/Kap nino/kap.video/singer.mp4">
+   </video>
+  </div>
+  <div class="Four">
+   <span>School Gurl</span>
+   <video loop id="four"  src="/Kap nino/kap.video/skulgirl.mp4">
+   </video>
+  </div>
+  <div class="Five">
+   <span>Thirst-trapper</span>
+   <video loop id="five"  src="/Kap nino/kap.video/thirstrap.mp4">
+   </video>
+   
+  </div>
+ </div>
+ <div class="gif">
+  <a href="/Kap nino/kap.video/sayaw.gif"><img style="height: 80px;" src="/Kap nino/kap.video/gift.gif" alt=""></a>
+  <a href="/Kap nino/kap.video/kapninober-ninober.gif"><img style="height: 80px;" src="/Kap nino/kap.video/gift.gif" alt=""></a>
+  <a href="/Kap nino/kap.video/images (19).jpeg"><img style="height: 80px;" src="/Kap nino/kap.video/gift.gif" alt=""></a>
+  <a href="/Kap nino/kap.video/images (20).jpeg"><img style="height: 80px;" src="/Kap nino/kap.video/gift.gif" alt=""></a>
+  <a href="/Kap nino/kap.video/images (21).jpeg"><img style="height: 80px;" src="/Kap nino/kap.video/gift.gif" alt=""></a>
+ </div>
+<script>
+const span = document.querySelectorAll('span')
+ const video =document.querySelector('video')
+
+
+ const greet = document.getElementById('one');
+const english = document.getElementById('two');
+const sing = document.getElementById('three');
+const skul = document.getElementById('four');
+const TT = document.getElementById('five');
+
+const One = document.querySelector('.One');
+const Two = document.querySelector('.Two');
+const Three = document.querySelector('.Three');
+const Four = document.querySelector('.Four');
+const Five = document.querySelector('.Five');
+
+One.addEventListener('click', function() {
+ if (greet.style.display === 'flex') {
+ span[0].style.display ='inline'
+ greet.style.display = 'none';
+ greet.pause();
+ return;
+}
+ greet.currentTime = 0
+ span[4].style.display ='inline'
+ span[3].style.display ='inline'
+ span[2].style.display ='inline'
+ span[1].style.display ='inline'
+ span[0].style.display ='none'
+ greet.style.display = 'flex';
+ english.style.display = 'none';
+ sing.style.display = 'none';
+ skul.style.display = 'none';
+ TT.style.display= 'none';
+ greet.play()
+ english.pause()
+ sing.pause()
+ skul.pause()
+ TT.pause()
+ 
+ 
+
+});
+ Two.addEventListener('click', function() {
+  if (english.style.display === 'flex') {
+   span[1].style.display ='inline'
+ english.style.display = 'none';
+ english.pause();
+ return;
+  }
+  english.currentTime = 0
+  span[4].style.display ='inline'
+  span[3].style.display ='inline'
+  span[2].style.display ='inline'
+  span[1].style.display ='none'
+  span[0].style.display ='inline'
+ greet.style.display = 'none';
+ english.style.display = 'flex';
+ sing.style.display = 'none';
+ skul.style.display = 'none';
+ TT.style.display= 'none';
+ greet.pause()
+ english.play()
+ sing.pause()
+ skul.pause()
+ TT.pause()
+})
+Three.addEventListener('click', function() {
+ if (sing.style.display === 'flex') {
+  span[2].style.display ='inline'
+ sing.style.display = 'none';
+ sing.pause();
+ return;
+ }
+ sing.currentTime = 0
+ span[4].style.display ='inline'
+ span[3].style.display ='inline'
+ span[2].style.display ='none'
+ span[1].style.display ='inline'
+ span[0].style.display ='inline'
+ greet.style.display = 'none';
+ english.style.display = 'none';
+ sing.style.display = 'flex';
+ skul.style.display = 'none';
+ TT.style.display= 'none';
+greet.pause()
+english.pause()
+sing.play()
+skul.pause()
+TT.pause() 
+})
+Four.addEventListener('click', function() {
+ if (skul.style.display === 'flex') {
+  span[3].style.display ='inline'
+ skul.style.display = 'none';
+ skul.pause();
+ return;
+ } 
+ skul.currentTime = 0
+ span[4].style.display ='inline'
+ span[3].style.display ='none'
+ span[2].style.display ='inline'
+ span[1].style.display ='inline'
+ span[0].style.display ='inline'
+ greet.style.display = 'none';
+ english.style.display = 'none';
+ sing.style.display = 'none';
+ skul.style.display = 'flex';
+ TT.style.display= 'none';
+ greet.pause()
+english.pause()
+sing.pause()
+skul.play()
+TT.pause()
+})
+Five.addEventListener('click', function() {
+ if (TT.style.display === 'flex') {
+  span[4].style.display ='inline'
+ TT.style.display = 'none';
+ TT.pause();
+ return;
+ }
+ TT.currentTime = 0
+ span[4].style.display ='none'
+ span[3].style.display ='inline'
+ span[2].style.display ='inline'
+ span[1].style.display ='inline'
+ span[0].style.display ='inline'
+ greet.style.display = 'none';
+ english.style.display = 'none';
+ sing.style.display = 'none';
+ skul.style.display = 'none';
+ TT.style.display= 'flex';
+ greet.pause()
+english.pause()
+sing.pause()
+skul.pause()
+TT.play()
+})
+
+</script>
+</body>
+
+</html>
